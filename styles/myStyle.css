@@ -9,6 +9,7 @@
   --media-width: 100vw;
   --btns-hover: rgb(115, 120, 129, 0.9);
   --main-text-color-sec2: #181b21;
+  --btn-color-black: #181b21;
   --white-sections: #ffffff;
 }
 
@@ -65,7 +66,20 @@ a {
 }
 
 #container2 {
+}
+
+.side-img-container {
   background-image: url(/assets/images/model_3_safety_hero.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 1100px;
+  position: absolute;
+  height: 700px;
+  z-index: -1;
+  margin-left: 250px;
+  float: right;
 }
 
 #container3 {
@@ -186,6 +200,7 @@ a {
 .title-center {
   padding-top: 120px;
   font-size: 50px;
+  font-weight: 500;
 }
 
 .nav {
@@ -216,6 +231,7 @@ a {
 .items-in-row {
   margin-top: 350px;
   margin-left: 330px;
+  color: var(--main-text-color);
 }
 
 .speed-metor {
@@ -232,10 +248,12 @@ a {
 .f-common {
   float: left;
   padding: 0 30px;
+  width: 150px;
 }
 
 .arrow-down {
   text-align: center;
+  cursor: pointer;
   animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
@@ -257,6 +275,7 @@ a {
   float: left;
   padding-top: 50px;
   padding-left: 50px;
+  height: calc((var(--media-width) / 2) + 8px);
 }
 .card-white-left h1 {
   font-weight: 100;
@@ -275,5 +294,69 @@ a {
 }
 
 .padding-text-s2 {
-  padding-bottom: 50px;
+  padding-bottom: 150px;
+}
+
+/* buttons */
+.order-now-btn-ops {
+  float: right;
+  width: 164px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 3px var(--btn-color-black) solid;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.order-now-btn-ops:hover {
+  background-color: var(--btn-color-black);
+  color: var(--main-text-color);
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  cursor: pointer;
+}
+.learn-more-btn-wrapper {
+  display: flex;
+  margin-right: 15px;
+}
+.learn-more-btn-wrapper span {
+  padding-top: 10px;
+  padding-left: 7px;
+}
+
+.button-learn-and-order-wrapper {
+  display: flex;
+}
+.learn-more-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  padding: top 0;
+  text-align: center;
+  border: 3px var(--btn-color-black) solid;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.learn-more-btn-wrapper:hover input[type="button"] {
+  background-color: var(--btn-color-black);
+  cursor: pointer;
+  color: var(--main-text-color);
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+.learn-more-btn-wrapper:hover {
+  cursor: pointer;
+}
+
+.card-white-bottom {
+  color: var(--main-text-color-sec2);
+  background-color: var(--white-sections);
+  padding-top: 50px;
+  padding-left: 50px;
+  height: 200px;
+  bottom: 0;
 }
