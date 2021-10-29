@@ -1,0 +1,199 @@
+:root {
+  --main-text-color: #ffffff;
+  --icon-fill: #ffffff;
+  --icon-size: 30px;
+  --icon-bg: transparent;
+  --color-secondary: #fff;
+  --icon-stroke: #fff;
+  --media-height: 100vh;
+  --media-width: 100vw;
+  --btns-hover: #737881;
+}
+
+/* general */
+
+* {
+  box-sizing: border-box;
+  color: var(--main-text-color);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  background-color: black;
+  /* font-family: "Gotham SSM medium", "Segoe UI", "Helvetica Neue", Arial,
+    sans-serif; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  line-height: 30px;
+}
+
+a {
+  -webkit-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.clr {
+  clear: both;
+}
+
+/* background */
+
+#main-container {
+  scroll-snap-type: y mandatory;
+}
+
+#container1 {
+  background-image: url(/assets/images/model-3-hero-desktop.jpg);
+}
+
+#container2 {
+  background-image: url(/assets/images/model_3_safety_hero.png);
+}
+
+#container3 {
+  background-image: url(/assets/images/lhd-performance-hero-desktop.jpg);
+}
+
+.container {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: var(--media-width);
+  height: var(--media-height);
+  max-width: 100%;
+  scroll-snap-align: start;
+}
+
+/* icon styling */
+
+.tds-site-header > .tds-icon,
+.tds-site-header > .topnav-span {
+  min-height: 54px;
+}
+
+.topnav-span {
+  font-weight: bold;
+}
+
+.tds-icon {
+  /* margin: calc(var(--icon-size) / -5);
+  --icon-fill: var(--color-secondary, #171a20);
+  --tds-icon--stroke: var(--color-secondary, #171a20); */
+  background: var(--icon-bg);
+  block-size: var(--icon-size);
+  content: "";
+  display: block;
+  inline-size: calc(var(--icon-size) * 4);
+  position: fixed;
+  top: 9px;
+  left: 48px;
+  max-width: 100%;
+  min-block-size: var(--icon-size);
+  min-inline-size: var(--icon-size);
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+/* navbar styling */
+
+.site-nav-items {
+  min-height: 54px;
+}
+
+.tds-site-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+}
+
+#topnav-right-side li,
+#topnav-centered li {
+  float: left;
+  padding: 2px 19px;
+  list-style: none;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+#topnav-centered li:hover,
+#topnav-right-side li:hover {
+  background-color: var(--btns-hover);
+  /* animation-delay: 1s;
+  animation: fadein ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#topnav-centered {
+  margin-left: 328px;
+  margin-top: 10px;
+}
+
+#topnav-right-side {
+  margin-top: 10px;
+}
+
+.tds-align--end {
+  margin-left: 80px;
+}
+
+/* new */
+
+.main-heading {
+  padding-top: 140px;
+  text-align: center;
+}
+
+.title-center {
+  padding-top: 120px;
+  font-size: 50px;
+}
+
+.main-heading h1 {
+  font-size: 400px;
+}
+
+.nav {
+  overflow: auto;
+}
+
+.order-now-btn {
+  width: 124px;
+  background-color: transparent;
+}
+
+/* details */
+
+.details {
+  position: relative;
+}
+
+.speed-metor {
+  width: 50px;
+  height: 50px;
+}
