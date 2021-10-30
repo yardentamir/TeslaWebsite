@@ -257,7 +257,7 @@ p {
 .fix-side-menu-span {
   padding: 5px;
   font-size: 12px;
-  width: 200px;
+  width: 120px;
   font-family: "GS-bold";
   font-size: 10px;
 }
@@ -265,17 +265,14 @@ p {
   opacity: 0;
 }
 
-#li1:hover span,
-#li2:hover span,
-#li3:hover span,
-#li4:hover span,
-#li5:hover span,
-#li6:hover span,
-#li7:hover span,
-#li8:hover span,
-#li9:hover span {
+.ops-1-hover:hover span {
   opacity: 1;
   cursor: pointer;
+}
+
+.ops-1-hover:hover div {
+  cursor: pointer;
+  background-color: var(--color-secondary);
 }
 
 /* new */
