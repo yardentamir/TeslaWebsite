@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tesla | Model 3</title>
     <!-- links -->
-    <script type="text/javascript" src="js/myJavascript.js"></script>
     <link rel="stylesheet" href="styles/myStyle.css" />
     <link
       rel="icon"
@@ -19,6 +18,24 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <!-- scripts -->
+    <script type="text/javascript" src="js/myJavascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="path/to/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // arrow dwn scroll
+        $("#arrow-btn").click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $("#container2").offset().top,
+              behavior: "smooth",
+            },
+            100
+          );
+        });
+      });
+    </script>
   </head>
   <body class="scrollbar-hidden">
     <header class="tds-site-header">
@@ -175,7 +192,7 @@
           </div>
         </section>
         <div class="clr"></div>
-        <div id="arrow-btn" class="arrow-down" onclick="clicked()">
+        <div id="arrow-btn" class="arrow-down">
           <i class="fas fa-chevron-down fa-2x"></i>
         </div>
       </section>
