@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tesla | Model 3</title>
     <!-- links -->
+    <script type="text/javascript" src="js/myJavascript.js"></script>
     <link rel="stylesheet" href="styles/myStyle.css" />
     <link rel="stylesheet" href="styles/fonts-import.css" />
     <link
@@ -79,7 +80,7 @@
     </header>
     <!-- main content -->
     <div id="main-container" role="main">
-      <section id="container1">
+      <section id="container1" class="container">
         <h1>
           <section class="main-heading title-center">Model 3</section>
         </h1>
@@ -131,7 +132,7 @@
           </div>
         </section>
         <div class="clr"></div>
-        <div id="arrow-btn" class="arrow-down">
+        <div id="arrow-btn" class="arrow-down" onclick="clicked()">
           <i class="fas fa-chevron-down fa-2x"></i>
         </div>
       </section>
@@ -140,7 +141,7 @@
         <div class="card-white-left">
           <div class="top-heading-s2">
             <h1 class="light-heading">Safety</h1>
-            <h2>Built for Safety</h2>
+            <h2 class="sub-title">Built for Safety</h2>
           </div>
           <div class="text-s2">
             <p class="section-texts padding-text-s2">
@@ -160,7 +161,7 @@
           </div>
         </div>
       </section>
-      <section id="container3">
+      <section id="container3" class="container">
         <div class="top-img-container"></div>
         <div class="clr"></div>
         <div class="items-in-row-s3">
@@ -216,17 +217,32 @@
             </p>
           </div>
         </div>
-        <div class="card-white-bottom">
-          <div class="top-heading-s2">
-            <h1 class="light-heading">Performance</h1>
-            <h2>Quickest Acceleration</h2>
-          </div>
-          <div class="button-learn-and-order-wrapper">
-            <div class="learn-more-btn-wrapper">
-              <input type="button" value="+" class="learn-more-btn" />
-              <span>LEARN MORE</span>
+        <div class="card-white-bottom make-flex">
+          <div class="side1-s3">
+            <div class="top-heading-s2">
+              <h1 class="light-heading">Performance</h1>
+              <h2 class="sub-title">Quickest Acceleration</h2>
             </div>
-            <input type="button" value="ORDER NOW" class="order-now-btn-ops" />
+            <div class="button-learn-and-order-wrapper margin-learn-s3">
+              <div class="learn-more-btn-wrapper">
+                <input type="button" value="+" class="learn-more-btn" />
+                <span>LEARN MORE</span>
+              </div>
+              <input
+                type="button"
+                value="ORDER NOW"
+                class="order-now-btn-ops"
+              />
+            </div>
+          </div>
+          <div class="side2-s3">
+            <p>
+              Model 3 comes with the option of dual motor all-wheel drive, 20”
+              Überturbine Wheels and Performance Brakes and lowered suspension
+              for total control, in all weather conditions. And a carbon fiber
+              spoiler improves stability at high speeds, all allowing Model 3 to
+              accelerate from 0-60 mph* in as little as 3.1 seconds.
+            </p>
           </div>
         </div>
       </section>

@@ -64,7 +64,6 @@ a {
   width: var(--media-width);
   height: var(--media-height);
   max-width: 100%;
-  scroll-snap-align: start;
 }
 
 #container3 {
@@ -277,15 +276,16 @@ a {
   background-color: var(--white-sections);
   width: 413px;
   float: left;
-  padding-top: 50px;
+  padding-top: 45px;
   padding-left: 50px;
   height: calc((var(--media-width) / 2) + 8px);
 }
 .light-heading {
   font-weight: 100;
+  font-size: 19px;
 }
 
-.card-white-left h2 {
+.sub-title {
   font-size: 2em;
   font-weight: 550;
 }
@@ -335,8 +335,8 @@ a {
 .learn-more-btn {
   width: 40px;
   height: 40px;
-  font-size: 30px;
-  padding: top 0;
+  font-size: 1.6em;
+  padding: 0;
   text-align: center;
   border: 3px var(--btn-color-black) solid;
   border-radius: 100%;
@@ -360,7 +360,7 @@ a {
   color: var(--main-text-color-sec2);
   background-color: var(--white-sections);
   margin-top: 460px;
-  padding: 50px 152px;
+  padding: 40px 152px;
 }
 
 .items-in-row-s3 {
@@ -373,4 +373,17 @@ a {
   float: left;
   width: 300px;
   text-align: center;
+  margin-right: 30px;
+}
+
+.side2-s3 {
+  padding: 0 40px;
+}
+
+.side1-s3 {
+  width: 1200px;
+}
+
+.margin-learn-s3 {
+  margin-top: 20px;
 }
