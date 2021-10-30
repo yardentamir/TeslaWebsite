@@ -28,12 +28,6 @@
   display: none;
 }
 
-html {
-  background-color: black;
-  /* font-family: "Gotham SSM medium", "Segoe UI", "Helvetica Neue", Arial,
-    sans-serif; */
-}
-
 h1,
 h2,
 h3,
@@ -62,31 +56,7 @@ a {
 }
 
 #container1 {
-  background-image: url(/assets/images/model-3-hero-desktop.jpg);
-}
-
-#container2 {
-}
-
-.side-img-container {
-  background-image: url(/assets/images/model_3_safety_hero.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 1100px;
-  position: absolute;
-  height: 700px;
-  z-index: -1;
-  margin-left: 250px;
-  float: right;
-}
-
-#container3 {
-  background-image: url(/assets/images/lhd-performance-hero-desktop.jpg);
-}
-
-.container {
+  background-image: url(/assets/images/model-3-hero-desktop3.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -95,6 +65,37 @@ a {
   height: var(--media-height);
   max-width: 100%;
   scroll-snap-align: start;
+}
+
+#container3 {
+  margin-top: 370px;
+}
+
+.side-img-container {
+  background-image: url(/assets/images/model_3_safety_hero4.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 1100px;
+  position: absolute;
+  height: 700px;
+  z-index: -1;
+  margin-left: 160px;
+  float: right;
+}
+
+.top-img-container {
+  background-image: url(/assets/images/lhd-performance-hero-desktop2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: var(--media-width);
+  height: var(--media-height);
+  position: absolute;
+  margin-top: 278px;
+  z-index: -1;
 }
 
 /* icon styling */
@@ -158,13 +159,9 @@ a {
 #topnav-centered li:hover,
 #topnav-right-side li:hover {
   background-color: var(--btns-hover);
-  /* animation-delay: 1s;
-  animation: fadein ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 
 @keyframes fadein {
@@ -192,7 +189,6 @@ a {
 /* new */
 
 .main-heading {
-  padding-top: 140px;
   text-align: center;
   font-size: 30px;
 }
@@ -221,39 +217,47 @@ a {
   cursor: pointer;
   color: rgb(58, 58, 58);
   background-color: var(--icon-fill);
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 
 /* items-in-row */
 
 .items-in-row {
-  margin-top: 350px;
-  margin-left: 330px;
+  margin-top: 370px;
+  margin-left: 310px;
   color: var(--main-text-color);
 }
 
 .speed-metor {
-  width: 40px;
-  height: 40px;
+  width: 55px;
   float: left;
 }
 
 .speed-metor-text {
-  display: flex;
   font-size: 30px;
+}
+
+.smaller-txt {
+  font-size: 27px;
+}
+
+.make-flex {
+  display: flex;
+  justify-content: center;
 }
 
 .f-common {
   float: left;
-  padding: 0 30px;
-  width: 150px;
+  width: 170px;
+  text-align: center;
 }
 
 .arrow-down {
   text-align: center;
   cursor: pointer;
+  margin-top: 30px;
   animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
@@ -271,13 +275,13 @@ a {
 .card-white-left {
   color: var(--main-text-color-sec2);
   background-color: var(--white-sections);
-  width: 500px;
+  width: 413px;
   float: left;
   padding-top: 50px;
   padding-left: 50px;
   height: calc((var(--media-width) / 2) + 8px);
 }
-.card-white-left h1 {
+.light-heading {
   font-weight: 100;
 }
 
@@ -288,8 +292,8 @@ a {
 
 .section-texts {
   padding-top: 60px;
-  line-height: 25px;
-  font-size: 19px;
+  line-height: 22px;
+  font-size: 16px;
   padding-right: 80px;
 }
 
@@ -311,9 +315,9 @@ a {
 .order-now-btn-ops:hover {
   background-color: var(--btn-color-black);
   color: var(--main-text-color);
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
   cursor: pointer;
 }
 .learn-more-btn-wrapper {
@@ -343,9 +347,9 @@ a {
   background-color: var(--btn-color-black);
   cursor: pointer;
   color: var(--main-text-color);
-  -webkit-transition: background-color 500ms linear;
-  -ms-transition: background-color 500ms linear;
-  transition: background-color 500ms linear;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 
 .learn-more-btn-wrapper:hover {
@@ -355,8 +359,18 @@ a {
 .card-white-bottom {
   color: var(--main-text-color-sec2);
   background-color: var(--white-sections);
-  padding-top: 50px;
-  padding-left: 50px;
-  height: 200px;
-  bottom: 0;
+  margin-top: 460px;
+  padding: 50px 152px;
+}
+
+.items-in-row-s3 {
+  margin-top: 320px;
+  margin-left: 165px;
+  color: var(--main-text-color);
+}
+
+.f-common-s3 {
+  float: left;
+  width: 300px;
+  text-align: center;
 }
